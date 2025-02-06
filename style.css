@@ -13,10 +13,10 @@ body {
   background-color: #d8b4f5;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #4a306d;
+.logo img {
+  width: 210px;
+  height: auto;
+  display: block;
 }
 
 .nav a {
