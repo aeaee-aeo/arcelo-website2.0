@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ALBA Space</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 512 512'><circle cx='256' cy='256' r='256' fill='%23ffffff'/><text x='50%25' y='50%25' text-anchor='middle' fill='%234b3f72' font-family='Arial, sans-serif' font-size='200' dy='.3em' font-weight='bold'>aL'ba</text></svg>">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <header class="header">
@@ -15,7 +17,7 @@
     <nav class="nav">
       <a href="#home">Home</a>  
       <a href="#about">About Me</a>
-      <a href="#contact">Contact</a>
+      <a href="#blog">My 2024</a>
     </nav>
   </header>
 
@@ -44,21 +46,214 @@
     </div>
 
     <section id="about" class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-containers">
-          <div class="about-container">
-            <h3 class="about-heading">Personal Background</h3>
-            <p class="about-text">Hi! I'm Althea Lee B. Arcelo, a 20-year-old student from Cebu, Philippines. I'm currently in my third year pursuing a Bachelor of Science in Computer Engineering at Cebu Technological University-Danao Campus.</p>
-            <a href="A1.html" class="btn btn-read-more">Read More</a>
-          </div>
-          <div class="about-container">
-            <h3 class="about-heading">Story of My Life in 2024</h3>
-            <p class="about-text">2024 was a year of growth, challenges, and deep reflection. It was a journey filled with moments of joy, accomplishment, and heartbreak—one that tested my strength in ways I never expected.</p>
-            <a href="A2.html" class="btn btn-read-more">Read More</a>
-          </div>
+      <p class="about-subtitle">Get To Know More</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-container">
+        <div class="about-image">
+          <img src="pictures/pic1.jpg" alt="Profile" class="profile-image">
         </div>
+        <div class="about-content">
+          <div class="about-box">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Education</h3>
+            <p>Bachelor of Science in Computer Engineering<br>Cebu Technological University - Danao Campus</p>
+          </div>
+          <p class="about-text">Hi! I'm Althea Lee B. Arcelo, a 20-year-old student from Cebu, Philippines. I'm currently in my third year pursuing a Bachelor of Science in Computer Engineering at Cebu Technological University-Danao Campus. As a dedicated student, I'm always eager to expand my skills and knowledge in the ever-evolving field of technology. Problem-solving and innovation excite me, and I aspire to use my education to make meaningful contributions in engineering and technology.
+            Beyond academics, I have a wide range of hobbies that bring balance and joy to my life. I love watching movies and series, especially K-dramas and Japanese shows.</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="blog" class="blogs-section">
+      <p class="blogs-subtitle">Browse my recent life in</p>
+      <h2 class="blogs-title">2024</h2>
+      <div class="blogs-container">
+          <div class="blog-card" onclick="openModal('january')">
+              <h3>January</h3>
+              <img src="pictures/Jan1.jpg" alt="month-pictures">
+              <div class="blog-content">
+                  <p class="username">@alba_space</p>
+                  <p>The start of a new year always brings a sense of renewal. Though I wasn’t...</p>
+                  <div class="icons">
+                      <i class="fa fa-heart" style="color: #6b408c"></i>
+                      <i class="fa fa-comment"></i>
+                      <i class="fa fa-share"></i>
+                  </div>
+              </div>
+          </div>
+      
+
+          <div class="blog-card" onclick="openModal('february')">
+            <h3>February</h3>
+            <img src="pictures/Feb1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>This month was a quiet reminder that love comes in many forms. A simple flower from a...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('march')">
+            <h3>March</h3>
+            <img src="pictures/Mar1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>March felt overwhelming in ways I didn’t expect. There were days when my emotions ...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('april')">
+            <h3><span>April</h3>
+            <img src="pictures/Apr2.jpeg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>April was a month of both pressure and accomplishment. Enrolling in TESDA’s...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('may')">
+            <h3>May</h3>
+            <img src="pictures/May1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>A month filled with milestones and celebrations. We surprised our mother...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('jun')">
+            <h3><span>June</h3>
+            <img src="pictures/Jun1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>The beginning of summer break was a chance to pause, rest, and reconnect...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('jul')">
+            <h3>July</h3>
+            <img src="pictures/Jul1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>Another year, another chapter. Turning a year older always brings a mix of emotions—gratitude...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('aug')">
+            <h3><span>August</h3>
+            <img src="pictures/Aug1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>August felt quiet, yet significant. The start of the school year marked ...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('sept')">
+            <h3><span>September</h3>
+            <img src="pictures/September1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>We celebrated my mother’s birthday with love and gratitude, but this month...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('oct')">
+            <h3><span>October</h3>
+            <img src="pictures/Oct2.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>Grief does not fade overnight, but time allows healing to begin. This month,...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('nov')">
+            <h3><span>November</h3>
+            <img src="pictures/Sept1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>Another farewell, another loss. Losing another uncle in such a...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+
+          <div class="blog-card" onclick="openModal('dec')">
+            <h3>December</h3>
+            <img src="pictures/Dec1.jpg" alt="month-pictures">
+            <div class="blog-content">
+                <p class="username">@alba_space</p>
+                <p>The end of the year was bittersweet—a time of warmth and celebration, yet also a...</p>
+                <div class="icons">
+                    <i class="fa fa-heart" style="color: #6b408c"></i>
+                    <i class="fa fa-comment"></i>
+                    <i class="fa fa-share"></i>
+                </div>
+            </div>
+          </div>
+      </div>
     </section>
 
+    <!-- Hidden Modal for Slideshow -->
+<div id="imageModal" class="modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modal-title"></h3>
+      <div class="slideshow-container">
+          <img id="modal-img" src="" alt="Slideshow Image">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+      </div>
+      <p id="modal-caption"></p>
+  </div>
+</div>
+  
+  
   </main>
 
   <footer class="footer">
@@ -66,7 +261,7 @@
     <div class="social-icons">
       <a href="https://www.facebook.com/profile.php?id=100013111716009" class="icon"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/_aye_yhe_?igsh=dmtrd2dsdzM4Yjg2" class="icon"><i class="fab fa-instagram"></i></a>
-      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/dashboard" class="icon"><i class="fab fa-github"></i></a>
     </div>
   </footer>
 </body>

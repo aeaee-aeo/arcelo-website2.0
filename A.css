@@ -77,6 +77,22 @@ body {
     text-align: justify;
     color: #4b3f72;
   }
+
+  p b {
+    position: relative;
+    font-size: 24px; /* Default font size */
+}
+
+p b::before {
+    content: "2";
+    font-size: 60px; /* Bigger size for the "2" */
+    font-weight: bold;
+    color: #6b408c; /* Purple theme */
+    position: absolute;
+    left: -10px; /* Adjust positioning */
+    top: -10px;
+}
+
   
   .images img {
     width: 100%;
