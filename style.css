@@ -19,12 +19,13 @@ body {
   display: block;
 }
 
-.nav a {
-  margin: 0 1rem;
-  text-decoration: none;
+.nav a[href^="#"] {
+  margin: 1rem;
   color: #6b408c;
+  text-decoration: none;
   transition: color 0.3s;
 }
+
 
 .nav a:hover {
   color: #4a306d;
@@ -240,6 +241,10 @@ body {
   display: none;
   align-items: center;
   justify-content: center;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
 }
 
 .modal:target {
@@ -265,19 +270,6 @@ body {
   color: #6b5f8a;
 }
 
-.close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 30px;
-  text-decoration: none;
-  color: #4a306d;
-}
-
-.close:hover {
-  color: black;
-}
-
 /* Slideshow */
 .slideshow-container {
   position: relative;
@@ -295,31 +287,74 @@ body {
   border-radius: 10px;
 }
 
-.prev, .next {
+/* sprites for close, nxt, prev*/
+.close {
+  position: absolute;
+  margin-top: 5px;
+  top: 10px;
+  right: 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url('pictures/closeee.png'); 
+  background-size: 50px 50px; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.close:hover {
+  opacity: 0.8; 
+}
+
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: white;
-  color: #6b408c;
-  border-radius: 40px;
-  padding: 5px;
-  font-size: 20px;
+  width: 20px; 
+  height: 30px;
+  background-image: url('pictures/nxtprevv.png');
+  background-size: 42px 30px;
+  background-repeat: no-repeat;
+}
+
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px; 
+  height: 35px;
+  background-image: url('pictures/nxtprevv.png');
+  background-size: 50px 30px; 
+  background-repeat: no-repeat;
 }
 
 .prev {
   left: 10px;
+  background-position: 0 0; 
 }
 
 .next {
   right: 10px;
+  background-position: -25px 0;
 }
 
 .prev:hover, .next:hover {
-  background-color: white;
+  opacity: 0.7;
 }
 
+/* Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
 
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
 
 /* footer */
 .footer {
@@ -386,7 +421,7 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .blogs-container {
     grid-template-columns: 1fr;
   }
