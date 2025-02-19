@@ -19,16 +19,51 @@ body {
   display: block;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #d8b4f5;
+}
+.nav-links {
+  display: flex;
+}
 .nav a[href^="#"] {
   margin: 1rem;
   color: #6b408c;
   text-decoration: none;
   transition: color 0.3s;
 }
-
-
 .nav a:hover {
   color: #4a306d;
+}
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .nav {
+      flex-direction: column;
+      text-align: center;
+  }
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #d8b4f5;
+  }
+  .nav-links a {
+      display: block;
+      margin: 0.5rem 0;
+  }
+  .hamburger {
+      display: block;
+  }
+  .nav-links.show {
+      display: flex;
+  }
 }
 
 .main {
