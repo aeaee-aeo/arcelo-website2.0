@@ -305,6 +305,12 @@ body {
   color: #6b5f8a;
 }
 
+#borderimg {
+  border: 18px solid transparent;
+  padding: 10px;
+  border-image: url(pictures/border.png) 20 round;
+}
+
 /* Slideshow */
 .slideshow-container {
   position: relative;
