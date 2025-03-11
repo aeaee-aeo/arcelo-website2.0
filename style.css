@@ -84,17 +84,20 @@ body {
 }
 
 .home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   padding: 50px;
   text-align: left;
   background-color: #f3e8ff;
+  align-items: center;
 }
 
 .home .text-content {
-  flex: 1;
-  padding: 40px;
+  margin-top: 55px;
+  margin-left: 20px;
+  width: 45%;
+  float: left;
+  padding: 20px;
+  text-align: left;
 }
 
 .home h1 {
@@ -122,13 +125,19 @@ body {
 }
 
 .home .image-container {
-  flex: 1;
-  text-align: center;
+  float: right;
 }
-.home img {
-  width: 100%;
+
+.home .image-container img{
+  width: 640px;
   height: 450px;
   object-fit: cover;
+}
+
+.home::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* about */
