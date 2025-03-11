@@ -61,7 +61,11 @@
             <div class="blog-card">
                 <h3>January</h3>
                 <a href="#modal-january">
-                  <img src="pictures/Jan1.jpg" alt="Jan">
+                  <div class="img-oflow">
+                    <img src="pictures/Jan1.jpg" alt="Jan">
+                    <img src="pictures/Jan2.jpg" alt="jan2">
+                    <img src="pictures/Jan3.jpg" alt="jan3">
+                  </div>
                 </a>
                 <div class="blog-content">
                   <p class="username">@alba_space</p>
@@ -77,7 +81,11 @@
             <div class="blog-card">
                 <h3>February</h3>
                 <a href="#modal-february">
-                  <img src="pictures/Feb1.jpg" alt="Feb">
+                  <div class="img-oflow">
+                    <img src="pictures/Feb1.jpg" alt="Feb">
+                    <img src="pictures/Feb2.jpg" alt="Feb">
+                    <img src="pictures/Feb3.jpg" alt="Feb">
+                  </div>
                 </a>
                 <div class="blog-content">
                   <p class="username">@alba_space</p>
@@ -92,8 +100,12 @@
   
             <div class="blog-card">
                 <h3>March</h3>
-                <a href="#modal-march"> 
-                  <img src="pictures/Mar1.jpg" alt="Mar">
+                <a href="#modal-march">
+                  <div class="img-oflow">
+                    <img src="pictures/Mar1.jpg" alt="Mar">
+                    <img src="pictures/Mar2.jpg" alt="Mar">
+                    <img src="pictures/Mar3.jpg" alt="Mar">
+                  </div> 
                 </a>
                 <div class="blog-content">
                   <p class="username">@alba_space</p>
@@ -108,8 +120,11 @@
 
             <div class="blog-card">
                 <h3>April</h3>
-                <a href="#modal-april"> 
-                  <img src="pictures/Apr11.jpeg" alt="Apr">
+                <a href="#modal-april">
+                  <div class="img-oflow">
+                    <img src="pictures/Apr11.jpeg" alt="Apr">
+                    <img src="pictures/Apr2.jpeg" alt="Apr">
+                  </div> 
                 </a>
                 <div class="blog-content">
                   <p class="username">@alba_space</p>
@@ -125,7 +140,11 @@
             <div class="blog-card">
               <h3>May</h3>
               <a href="#modal-may"> 
-                <img src="pictures/May1.jpg" alt="May">
+                <div class="img-oflow">
+                  <img src="pictures/May1.jpg" alt="May">
+                  <img src="pictures/May5.jpg" alt="May">
+                  <img src="pictures/May4.jpg" alt="May">
+                </div>
               </a>
               <div class="blog-content">
                 <p class="username">@alba_space</p>
@@ -141,7 +160,11 @@
             <div class="blog-card">
               <h3>June</h3>
               <a href="#modal-june"> 
-                <img src="pictures/Jun1.jpg" alt="Jun">
+                <div class="img-oflow">
+                  <img src="pictures/Jun1.jpg" alt="Jun">
+                  <img src="pictures/Jun2.jpg" alt="Jun">
+                  <img src="pictures/Jun3.jpg" alt="Jun">
+                </div>
               </a>
               <div class="blog-content">
                 <p class="username">@alba_space</p>
@@ -156,12 +179,15 @@
 
             <div class="blog-card">
               <h3>July</h3>
-              <a href="#modal-july"> 
-                <img src="pictures/Jul1.jpg" alt="Jul">
+              <a href="#modal-july">
+                <div class="img-oflow">
+                  <img src="pictures/Jul1.jpg" alt="Jul">
+                  <img src="pictures/Jul2.jpg" alt="Aug">
+                </div>  
               </a>
               <div class="blog-content">
                 <p class="username">@alba_space</p>
-                <p>Another year, another chapter. Turning a year older always brings a mix of emotions—gratitude...</p>
+                <p>Another year, another chapter. Turning a year older always brings a mix of emotions...</p>
                 <div class="icons">
                   <i class="fa fa-heart" style="color: #6b408c"></i>
                   <i class="fa fa-comment"></i>
@@ -173,7 +199,7 @@
             <div class="blog-card">
               <h3>August</h3>
               <a href="#modal-aug"> 
-                <img src="pictures/Aug1.jpg" alt="Aug">
+                  <img src="pictures/Aug1.jpg" alt="Aug">
               </a>
               <div class="blog-content">
                 <p class="username">@alba_space</p>
@@ -189,7 +215,10 @@
             <div class="blog-card">
               <h3>September</h3>
               <a href="#modal-sept"> 
-                <img src="pictures/September1.jpg" alt="Sept">
+                <div class="img-oflow">
+                  <img src="pictures/September1.jpg" alt="Sept">
+                  <img src="pictures/Septt1.jpg" alt="Sept">
+                </div>
               </a>
               <div class="blog-content">
                 <p class="username">@alba_space</p>
@@ -205,7 +234,11 @@
             <div class="blog-card">
               <h3>October</h3>
               <a href="#modal-oct"> 
-                <img src="pictures/Oct2.jpg" alt="Oct">
+                <div class="img-oflow">
+                  <img src="pictures/Oct2.jpg" alt="Oct">
+                  <img src="pictures/Oct1.jpg" alt="Oct">
+                  <img src="pictures/Oct3.jpg" alt="Oct">
+                </div>
               </a>
               <div class="blog-content">
                 <p class="username">@alba_space</p>
@@ -237,7 +270,11 @@
             <div class="blog-card">
               <h3>December</h3>
               <a href="#modal-dec"> 
-                <img src="pictures/Dec1.jpg" alt="Dec">
+                <div class="img-oflow">
+                  <img src="pictures/Dec1.jpg" alt="Dec">
+                  <img src="pictures/Dec4.jpeg" alt="Dec">
+                  <img src="pictures/Dec3.jpeg" alt="Dec">
+                </div>
               </a>
               <div class="blog-content">
                 <p class="username">@alba_space</p>
@@ -451,6 +488,16 @@
     function toggleMenu() {
         document.querySelector(".nav-links").classList.toggle("show");
     }
+
+    window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
   </script>
 </body>
 </html>
