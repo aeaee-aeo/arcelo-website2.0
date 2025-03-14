@@ -95,7 +95,7 @@ body {
   margin-top: 55px;
   margin-left: 20px;
   width: 45%;
-  float: left;
+  float: right;
   padding: 20px;
   text-align: left;
 }
@@ -125,10 +125,11 @@ body {
 }
 
 .home .image-container {
-  float: right;
+  float: left;
 }
 
 .home .image-container img{
+  margin-left: 20px;
   width: 640px;
   height: 450px;
   object-fit: cover;
