@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
 body { 
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f3e8ff;
+  background: conic-gradient(#fdeaff, #dfcafc, #fdeaff);
 }
 
 .header {
@@ -10,7 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
-  background-color: #d8b4f5;
+  background-color:  #e0c0ff;
   position: sticky;
   top: 0;
   z-index: 10000;
@@ -32,8 +34,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #d8b4f5;
+  background-color: #e0c0ff;
 }
+
 .nav-links {
   display: inline-block;
 }
@@ -42,6 +45,7 @@ body {
   color: #6b408c;
   text-decoration: none;
   transition: color 0.3s;
+  font-weight: 1000;
 }
 .nav a:hover {
   color: #4a306d;
@@ -87,12 +91,11 @@ body {
   overflow: hidden;
   padding: 50px;
   text-align: left;
-  background-color: #f3e8ff;
   align-items: center;
 }
 
 .home .text-content {
-  margin-top: 55px;
+  margin-top: 45px;
   margin-left: 20px;
   width: 45%;
   float: right;
@@ -101,8 +104,10 @@ body {
 }
 
 .home h1 {
-  font-size: 32px;
+  font-size: 1.9rem;
+  font-weight: bold;
   color: #4a306d;
+  text-shadow: 2px 2px 0 rgba(107, 64, 140, 0.4);
 }
 
 .home p {
@@ -144,7 +149,6 @@ body {
 /* about */
 .about-section {
   padding: 50px;
-  background-color: #f3e8ff;
   color: #4b3f72;
   width: 1160px;
 }
@@ -191,7 +195,7 @@ body {
   text-align: center;
 }
 .about-text-greet span{
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .about-text {
@@ -205,7 +209,6 @@ body {
 .blogs-section {
   text-align: center;
   padding: 50px 20px;
-  background-color:#f3e8ff;
 }
 
 .blogs-title {
@@ -320,6 +323,16 @@ display: none;
 .username {
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.text-oflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: block;
+  size: 1rem;
+  font-weight: 500;
 }
 
 .icons {
@@ -468,7 +481,7 @@ display: none;
 
 /* footer */
 .footer {
-  background-color: #d8b4f5;
+  background-color: #f5e1ff ;
   padding: 0.5rem 0.5rem;
   text-align: center;
   color: #4a306d;
