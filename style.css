@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+5@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
 
 body { 
   font-family: 'Poppins', sans-serif;
@@ -236,7 +236,7 @@ body {
 }
 
 .blog-card {
-  background: #FBFBFB;
+  background: white;
   border: 2px solid #6b408c;
   border-radius: 25px;
   padding: 20px;
